@@ -1,5 +1,7 @@
 /* Reset & base */
 :root
+--surface:#020617;
+--surface-soft:#020617;
 body{
   background-color:#0f172a;
   color:#e5e7eb;
