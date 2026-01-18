@@ -38,6 +38,13 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .resources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
 .resource-card{background:#fff;border:1px solid #eee;padding:1rem;border-radius:8px;text-align:center}
 .resource-card .icon{font-size:1.8rem}
+.resource-card,
+.service-card,
+.event-card{
+  background:var(--surface);
+  border-color:#1e293b;
+  color:#e5e7eb;
+}
 
 /* Services */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
