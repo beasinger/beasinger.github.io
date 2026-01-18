@@ -1,7 +1,5 @@
 /* Reset & base */
 :root
---surface:#020617;
---surface-soft:#020617;
 body{
   background-color:#0f172a;
   color:#e5e7eb;
@@ -11,6 +9,8 @@ body{
   --text:#111;
   --muted:#666;
   --max-width:1100px;
+  --surface:#020617;
+  --surface-soft:#020617;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
