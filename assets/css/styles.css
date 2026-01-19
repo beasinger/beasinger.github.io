@@ -39,7 +39,7 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .resource-card{background:#fff;border:1px solid #eee;padding:1rem;border-radius:8px;text-align:center}
 .resource-card .icon{font-size:1.8rem}
 .resource-card,
-.service-card,
+.services-card,
 .event-card{
   background:var(--surface);
   border-color:#1e293b;
