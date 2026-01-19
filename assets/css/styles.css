@@ -73,3 +73,21 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   .nav-toggle{display:inline-block}
   .main-nav .menu.show{display:flex}
 }
+
+h1, h2, h3{
+  color:#f8fafc;
+  margin-bottom:.6rem;
+}
+
+h1{
+  font-size:2rem;
+}
+
+h2{
+  font-size:1.4rem;
+}
+
+h3{
+  font-size:1.1rem;
+}
+
