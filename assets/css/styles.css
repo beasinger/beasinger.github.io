@@ -23,8 +23,13 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .nav-toggle{display:none;background:none;border:none;font-size:1.2rem}
 
 /* Hero */
-.hero{background:linear-gradient(180deg, var(--surface), #020617);;text-align:center;padding:4rem 0}
-.hero .lead{color:var(--muted);font-size:1.05rem}
+.hero{
+  background:
+    linear-gradient(rgba(2,6,23,.75), rgba(2,6,23,.75)),
+    url("../img/hero.jpg") center / cover no-repeat;
+  text-align:center;
+  padding:4rem 0;
+}
 
 /* Promo grid */
 .promo-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start}
