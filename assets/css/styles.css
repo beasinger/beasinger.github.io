@@ -109,23 +109,60 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .site-footer{padding:1.5rem 0;background:var(--surface);text-align:center;font-size:.95rem;color:var(--muted)}
 .hidden{display:none}
 
-/* Responsive */
+/* Responsive unificado */
 @media (max-width:900px){
+  /* Menú hamburguesa */
   .main-nav .menu {
     display: none;
     flex-direction: column;
     background: #000; /* negro para contraste */
     position: absolute;
-    top: 64px;
+    top: 64px;        /* igual a la altura del header */
     right: 1rem;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0,0,0,.5);
   }
-  .nav-toggle { display: inline-block; }
-  .main-nav .menu.show { display: flex; }
-  .main-nav .menu a { color: #d4af37; } /* enlaces dorados */
+
+  .nav-toggle {
+    display: inline-block; /* muestra botón hamburguesa */
+    font-size: 1.5rem;
+    color: #d4af37;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .main-nav .menu.show {
+    display: flex;
+  }
+
+  .main-nav .menu a {
+    color: #d4af37; /* enlaces dorados */
+  }
+
+  /* Ajustes generales para secciones */
+  .promo-grid,
+  .about,
+  .services-grid,
+  .resources-grid {
+    grid-template-columns: 1fr; /* todo en una columna */
+  }
+
+  /* Ajuste hero para móviles: menos alto */
+  .hero {
+    min-height: 25vh;      /* antes 40vh, se reduce más */
+    background-size: cover; /* ocupa todo el ancho y alto */
+  }
 }
+
+/* Para móviles más pequeños aún */
+@media (max-width:600px){
+  .hero {
+    min-height: 20vh; /* mínimo hero en pantallas muy pequeñas */
+  }
+}
+/* fin seccion responsive */
 
 h1, h2, h3{
   color:#f8fafc;
