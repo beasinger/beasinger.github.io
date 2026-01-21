@@ -45,9 +45,9 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 /* Hero */
 .hero{
   position: relative;
-  min-height: 40vh;          /* antes 80vh */
+  min-height: 40vh;
   background-image: url("/assets/images/hero.jpg");
-  background-size: cover;  /* CLAVE */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -104,13 +104,14 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 
 /* Responsive unificado */
 @media (max-width:900px){
+
   /* Menú hamburguesa */
   .main-nav .menu {
     display: none;
     flex-direction: column;
-    background: #000; /* negro para contraste */
+    background: #000;
     position: absolute;
-    top: 64px;        /* igual a la altura del header */
+    top: 64px;
     right: 1rem;
     padding: 1rem;
     border-radius: 8px;
@@ -118,12 +119,9 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   }
 
   .nav-toggle {
-    display: inline-block; /* muestra botón hamburguesa */
+    display: inline-block;
     font-size: 1.5rem;
     color: #d4af37;
-    cursor: pointer;
-    border: none;
-    background: none;
   }
 
   .main-nav .menu.show {
@@ -131,28 +129,29 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   }
 
   .main-nav .menu a {
-    color: #d4af37; /* enlaces dorados */
+    color: #d4af37;
   }
 
-  /* Ajustes generales para secciones */
+  /* Grids */
   .promo-grid,
   .about,
   .services-grid,
   .resources-grid {
-    grid-template-columns: 1fr; /* todo en una columna */
+    grid-template-columns: 1fr;
   }
 
-  /* Ajuste hero para móviles: menos alto */
-  .hero {
-    min-height: 25vh;      /* antes 40vh, se reduce más */
-    background-size: cover; /* ocupa todo el ancho y alto */
+  /* Hero móvil */
+  .hero{
+    min-height: 25vh;
+    background-size: contain;
+    background-position: center top;
   }
 }
 
-/* Para móviles más pequeños aún */
+/* Móviles muy pequeños */
 @media (max-width:600px){
-  .hero {
-    min-height: 20vh; /* mínimo hero en pantallas muy pequeñas */
+  .hero{
+    min-height: 20vh;
   }
 }
 /* fin seccion responsive */
