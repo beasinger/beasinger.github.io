@@ -47,20 +47,13 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   position: relative;
   min-height: 40vh;          /* antes 80vh */
   background-image: url("/assets/images/hero.jpg");
-  background-size: contain;  /* CLAVE */
+  background-size: cover;  /* CLAVE */
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.15)
-  );
-  z-index:0;
+  display:none;
 }
 
 .hero > *{
