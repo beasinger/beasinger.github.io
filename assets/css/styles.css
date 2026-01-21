@@ -45,9 +45,11 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 /* Hero */
 .hero{
   position: relative;
-  aspect-ratio: 2304 / 767;   /* el ratio REAL de tu imagen */
+  width: 100%;
+  aspect-ratio: 2304 / 767;
+  max-height: 55vh;          /* CONTROL real del tamaño */
   background-image: url("/assets/images/hero.jpg");
-  background-size: 80%;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
