@@ -136,6 +136,7 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .welcome-text{
   text-align: left;
   max-width: 640px;
+  padding-right: 1rem;   /* aire contra la imagen */
 }
 
 
