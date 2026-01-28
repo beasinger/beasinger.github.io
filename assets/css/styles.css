@@ -32,6 +32,27 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .main-nav .menu{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
 .main-nav a{color:var(--text);text-decoration:none}
 
+/* Language switch */
+.lang-switch button{
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.lang-switch button.active{
+  color: #d4af37; /* dorado */
+  font-weight: 600;
+}
+
+.lang-switch button.disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
 /* Botón hamburguesa móvil */
 .nav-toggle {
   display: none;           /* se activa en media query */
