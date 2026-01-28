@@ -125,8 +125,69 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .site-footer{padding:1.5rem 0;background:var(--surface);text-align:center;font-size:.95rem;color:var(--muted)}
 .hidden{display:none}
 
+/* Welcome section */
+.welcome-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 400px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.welcome-text{
+  text-align: left;
+  max-width: 640px;
+}
+
+
+.welcome-text p{
+  margin-bottom: 1rem;
+}
+
+.welcome-audio{
+  margin-bottom: 1.6rem;
+}
+
+.audio-placeholder{
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: .6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .95rem;
+}
+
+.audio-placeholder:hover{
+  background: rgba(212,175,55,0.1);
+}
+
+.welcome-image img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+.welcome-image{
+  display: flex;
+  justify-content: center;
+}
+
 /* Responsive unificado */
 @media (max-width:900px){
+
+  .welcome-grid{
+  grid-template-columns: 1fr;
+}
+
+.welcome-image{
+  order: -1;
+  text-align: center;
+}
+
+.welcome-image img{
+  max-width: 280px;
+}
+
 
   /* Menú hamburguesa */
   .main-nav .menu {
