@@ -190,6 +190,32 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 /* Responsive unificado */
 @media (max-width:900px){
 
+  /* Welcome – reordenar texto y video en mobile */
+  .welcome-text{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-part-1{
+    order: 1;
+  }
+
+  .welcome-video{
+    order: 2;
+    margin: 1rem 0;
+  }
+
+  .welcome-part-2{
+    order: 3;
+  }
+
+  .welcome-video iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+  }
+
   /* 🔹 Reduce espacio vertical entre secciones */
   .section{
     padding: 1.6rem 0;
