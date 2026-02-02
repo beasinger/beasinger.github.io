@@ -187,34 +187,37 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   justify-content: center;
 }
 
+/* Visibilidad por defecto = DESKTOP */
+.desktop-only{
+  display: block;
+}
+
+.mobile-only{
+  display: none;
+}
+
 /* Responsive unificado */
 @media (max-width:900px){
 
-  /* Welcome – reordenar texto y video en mobile */
-  .welcome-text{
-    display: flex;
-    flex-direction: column;
-  }
+  /* Welcome – texto partido solo en mobile */
+.desktop-only{
+  display: none;
+}
 
-  .welcome-part-1{
-    order: 1;
-  }
+.mobile-only{
+  display: block;
+}
 
-  .welcome-video{
-    order: 2;
-    margin: 1rem 0;
-  }
+.welcome-video{
+  margin: 1rem 0;
+}
 
-  .welcome-part-2{
-    order: 3;
-  }
-
-  .welcome-video iframe{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-  }
+.welcome-video iframe{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+}
 
   /* 🔹 Reduce espacio vertical entre secciones */
   .section{
