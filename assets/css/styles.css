@@ -376,3 +376,24 @@ h3{
 main {
   padding-top: 64px; /* igual a la altura del header */
 }
+
+/* Botón WhatsApp – Bienvenida */
+.cta-whatsapp{
+  display: inline-block;
+  margin-top: 1rem;
+  background: #25D366; /* verde WhatsApp */
+  color: #ffffff;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+.cta-whatsapp:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+  opacity: 0.95;
+}
