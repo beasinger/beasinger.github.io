@@ -176,41 +176,42 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 /* Responsive unificado */
 @media (max-width:900px){
 
+  /* 🔹 Reduce espacio vertical entre secciones */
   .section{
     padding: 1.6rem 0;
   }
+
+  /* 🔹 Secciones que deben ir aún más compactas */
   #resources.section,
   #services.section,
   #events.section{
     padding: 1.2rem 0;
   }
 
-  h2{
-  margin-bottom: .4rem;
-}
-.welcome-text{
+  /* Welcome */
+  .welcome-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-image{
+    order: -1;
+    text-align: center;
+  }
+
+  .welcome-image img{
+    max-width: 280px;
+  }
+
+  .welcome-text{
     padding-right: 0;
   }
 
   .welcome-text p{
     margin-bottom: .8rem;
   }
-  .welcome-grid{
-  grid-template-columns: 1fr;
-}
-
-.welcome-image{
-  order: -1;
-  text-align: center;
-}
-
-.welcome-image img{
-  max-width: 280px;
-}
-
 
   /* Menú hamburguesa */
-  .main-nav .menu {
+  .main-nav .menu{
     display: none;
     flex-direction: column;
     background: #000;
@@ -222,37 +223,44 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
     box-shadow: 0 8px 20px rgba(0,0,0,.5);
   }
 
-  .nav-toggle {
+  .nav-toggle{
     display: inline-block;
     font-size: 1.5rem;
     color: #d4af37;
   }
 
-  .main-nav .menu.show {
+  .main-nav .menu.show{
     display: flex;
   }
 
-  .main-nav .menu a {
+  .main-nav .menu a{
     color: #d4af37;
   }
 
-  /* Grids */
+  /* Grids a una columna */
   .promo-grid,
   .about,
   .services-grid,
-  .resources-grid {
+  .resources-grid{
     grid-template-columns: 1fr;
   }
-/* Aire lateral en mobile */
+
+  /* Aire lateral en mobile */
   .container{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
   /* Hero móvil */
   .hero{
     min-height: 25vh;
     background-size: contain;
     background-position: center top;
+  }
+
+  /* Títulos más compactos */
+  h2{
+    margin-bottom: .4rem;
   }
 }
 
@@ -262,6 +270,7 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
     min-height: 20vh;
   }
 }
+
 
 /* fin seccion responsive */
 
