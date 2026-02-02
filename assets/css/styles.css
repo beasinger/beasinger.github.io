@@ -391,7 +391,7 @@ main {
   display: inline-block;
   margin-top: 1rem;
   background: #25D366; /* verde WhatsApp */
-  color: #ffffff;
+  color: #000000; /* #ffffff; */
   padding: 0.7rem 1.3rem;
   border-radius: 999px;
   font-weight: 600;
