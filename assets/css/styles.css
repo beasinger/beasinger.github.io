@@ -409,13 +409,27 @@ main {
 
 /* Layout Sobre Mi */
 
-.about-layout{
+.about-layout {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 3rem;
-  align-items: center;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    "photo intro"
+    "text text";
+  gap: 2rem;
+  align-items: start;
 }
 
+.about-photo {
+  grid-area: photo;
+}
+
+.about-intro {
+  grid-area: intro;
+}
+
+.about-text {
+  grid-area: text;
+}
 .about-photo {
   display: flex;
   justify-content: center;
