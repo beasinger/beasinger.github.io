@@ -406,3 +406,54 @@ main {
   box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
   opacity: 0.95;
 }
+
+/* Layout Sobre Mi */
+
+.about-layout{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-photo img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-text h1{
+  margin-bottom: 1rem;
+}
+
+.about-text p{
+  line-height: 1.7;
+  opacity: .9;
+}
+
+/* Videos */
+
+.videos-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-wrapper iframe{
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+}
+
+.channel-link{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 900px){
+  .about-layout{
+    grid-template-columns: 1fr;
+  }
+}
