@@ -51,13 +51,40 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // About image expand
-  var aboutImage = document.querySelector('.about-photo img');
-  if (aboutImage) {
-    aboutImage.addEventListener('click', function () {
-      this.classList.toggle('expanded');
+  // About image expand (versión mejorada)
+var aboutImage = document.querySelector('.about-photo img');
+
+if (aboutImage) {
+  aboutImage.addEventListener('click', function () {
+
+    var overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.background = 'rgba(0,0,0,0.9)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = '10000';
+    overlay.style.cursor = 'zoom-out';
+
+    var img = document.createElement('img');
+    img.src = this.src;
+    img.style.maxWidth = '90%';
+    img.style.maxHeight = '90%';
+    img.style.borderRadius = '12px';
+
+    overlay.appendChild(img);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', function () {
+      document.body.removeChild(overlay);
     });
-  }
+
+  });
+}
   
 });
 
