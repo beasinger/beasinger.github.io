@@ -416,9 +416,31 @@ main {
   align-items: center;
 }
 
-.about-photo img{
-  width: 100%;
-  border-radius: 20px;
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 60%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+
+/* Estado expandido */
+.about-photo img.expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  z-index: 9999;
+  border-radius: 0;
 }
 
 .about-text h1{
@@ -455,6 +477,9 @@ main {
 @media (max-width: 900px){
   .about-layout{
     grid-template-columns: 1fr;
+  }
+  .about-photo img {
+    width: 85%;
   }
 }
 /* Botón dorado - Sobre mí */
