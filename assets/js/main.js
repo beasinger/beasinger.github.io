@@ -50,5 +50,14 @@ document.addEventListener('DOMContentLoaded', function(){
       alert('Gracias — el formulario intenta abrir tu cliente de correo. Para integrar un formulario real te puedo orientar con Formspree o un backend.');
     });
   }
+
+  // About image expand
+  var aboutImage = document.querySelector('.about-photo img');
+  if (aboutImage) {
+    aboutImage.addEventListener('click', function () {
+      this.classList.toggle('expanded');
+    });
+  }
+  
 });
 
