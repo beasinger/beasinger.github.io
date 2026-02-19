@@ -211,6 +211,18 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   display: none;
 }
 
+/* Layout Sobre Mi */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    "photo intro"
+    "text text";
+  gap: 2rem;
+  align-self: start;
+}
+
 /* Responsive unificado */
 @media (max-width:900px){
 
@@ -454,17 +466,7 @@ main {
   opacity: 0.95;
 }
 
-/* Layout Sobre Mi */
 
-.about-layout {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  grid-template-areas:
-    "photo intro"
-    "text text";
-  gap: 2rem;
-  align-self: start;
-}
 
 .about-photo {
   transform: translateY(8px);
