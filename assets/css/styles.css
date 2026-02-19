@@ -95,13 +95,16 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   display:grid;
   grid-template-columns:220px 1fr;
   gap:1.5rem;
-  align-items:start;
+  align-items:center;
 }
 
 @media (min-width:901px){
 
   #about .about-text{
     align-self: center;
+  }
+  #about .about-text h2{
+    margin-top: 0;
   }
 
 }
