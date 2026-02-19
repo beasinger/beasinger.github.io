@@ -530,7 +530,4 @@ main {
   opacity: 0.95;
 }
 
-#about .about{
-  display:grid !important;
-  grid-template-columns:220px 1fr !important;
-}
+
