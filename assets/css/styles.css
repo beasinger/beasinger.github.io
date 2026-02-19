@@ -533,5 +533,19 @@ main {
   box-shadow: 0 8px 20px rgba(198, 167, 94, 0.45);
   opacity: 0.95;
 }
+/* FIX imagen Sobre mí en mobile */
+@media (max-width: 900px){
+  .about-photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
+  .about-photo img{
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+  }
+}
 
