@@ -217,7 +217,8 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 /* ===== SOBRE MI MOBILE FIX DEFINITIVO ===== */
 
 .about-layout{
-  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr !important;
   grid-template-areas:
     "photo"
     "intro"
