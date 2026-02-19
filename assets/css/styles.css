@@ -300,11 +300,10 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   }
 
   /* Grids a una columna */
-  .promo-grid,
-  .about,
+   .promo-grid,
   .services-grid,
   .resources-grid{
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   }
 
   /* Aire lateral en mobile */
