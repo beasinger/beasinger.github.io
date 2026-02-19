@@ -236,7 +236,7 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 
 .about-layout{
   display: grid;
-  grid-template-columns: 1fr !important;
+  grid-template-columns: 1fr 
   grid-template-areas:
     "photo"
     "intro"
@@ -261,12 +261,7 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
   }
 
   /* About – limitar texto en mobile */
-  .about-text p{
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+
 
   #about .about{
   grid-template-columns: 1fr;
@@ -469,7 +464,7 @@ main {
 
 
 .about-photo {
-  transform: translateY(8px);
+  
   grid-area: photo;
   display: flex;
   justify-content: center;
