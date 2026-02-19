@@ -227,6 +227,10 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
     overflow: hidden;
   }
 
+  #about .about{
+  grid-template-columns: 1fr;
+}
+
   .mobile-only{
     display: block;
   }
