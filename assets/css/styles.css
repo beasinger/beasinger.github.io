@@ -421,6 +421,9 @@ main {
 
 .about-photo {
   grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-intro {
@@ -429,11 +432,6 @@ main {
 
 .about-text {
   grid-area: text;
-}
-.about-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about-photo img {
