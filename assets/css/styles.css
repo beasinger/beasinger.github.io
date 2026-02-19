@@ -205,23 +205,23 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 @media (max-width:900px){
 
   /* Welcome – texto partido solo en mobile */
-.desktop-only{
-  display: none;
-}
-/* About – limitar texto en mobile */
-  {
+  .desktop-only{
+    display: none;
+  }
+
+  /* About – limitar texto en mobile */
   .about-text p{
     display: -webkit-box;
-    -webkit-line-clamp: 4;   /* número de líneas visibles */
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-}
 
-.mobile-only{
-  display: block;
-}
+  .mobile-only{
+    display: block;
+  }
 
+ 
 .welcome-video{
   margin: 1rem 0;
 }
