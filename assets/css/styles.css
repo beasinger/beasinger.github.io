@@ -416,10 +416,11 @@ main {
     "photo intro"
     "text text";
   gap: 2rem;
-  align-items: start;
+  align-self: start;
 }
 
 .about-photo {
+  transform: translateY(8px);
   grid-area: photo;
   display: flex;
   justify-content: center;
