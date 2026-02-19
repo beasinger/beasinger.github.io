@@ -525,3 +525,8 @@ main {
   box-shadow: 0 8px 20px rgba(198, 167, 94, 0.45);
   opacity: 0.95;
 }
+
+#about .about{
+  display:grid !important;
+  grid-template-columns:220px 1fr !important;
+}
