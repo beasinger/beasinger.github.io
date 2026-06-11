@@ -564,4 +564,49 @@ main {
   opacity: 0.95;
 }
 
+/* =========================
+   Revisión Vocal Personalizada
+   ========================= */
+
+.vocal-review-section{
+  text-align: center;
+}
+
+.vocal-review-link{
+  display: block;
+  text-decoration: none;
+}
+
+.review-banner{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.review-banner:hover{
+  transform: scale(1.01);
+  opacity: .96;
+}
+
+.mobile-banner{
+  display: none;
+}
+
+/* Mobile */
+@media (max-width:900px){
+
+  .desktop-banner{
+    display: none;
+  }
+
+  .mobile-banner{
+    display: block;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+}
+
 
