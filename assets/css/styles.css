@@ -610,13 +610,28 @@ main {
 }
 
 .cta-audio{
+  display: inline-block;
   margin-top: .8rem;
   min-width: 11.625rem;
   height: 2.625rem;
   padding: 0 2rem;
-  border-radius: .25rem;
-  text-align: center;
+  background: #FFD140;
+  color: #000;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
   line-height: 2.625rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+  transition: opacity .15s ease;
+}
+
+.cta-audio:hover{
+  opacity: .9;
 }
 
 
