@@ -11,6 +11,11 @@
         content="Reviews profesionales para productos y servicios.">
 
   <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAecZjNeJOtw1X9BT-hRQ114UPgg0SeDY20cpLmSN5MwrNvLWWNQuKrlKWl254dJAFujgelZTlLS8M7V0&components=hosted-buttons&disable-funding=venmo&currency=USD">
+    </script>
+  
 </head>
 
 <body>
@@ -80,14 +85,21 @@
     <h2>¿Cómo funciona?</h2>
 
     <ol>
-      <li>
-       <a href="#pago" style="text-decoration: none; color: inherit;">
-        <div>
+     <li>
         <h3>Realiza tu pago</h3>
-            Haz tu pago fácil y seguro vía PayPal.
-        </div>
-      </a>
-      </li>
+
+        <p>
+        Haz tu pago fácil y seguro vía PayPal.
+        </p>
+
+        <div id="paypal-container-N3FWUD4SC7Y98"></div>
+
+      <script>
+      paypal.HostedButtons({
+      hostedButtonId: "N3FWUD4SC7Y98",
+      }).render("#paypal-container-N3FWUD4SC7Y98");
+      </script>
+    </li>
 
       <li>
         <strong>Envía tu audio.</strong>
