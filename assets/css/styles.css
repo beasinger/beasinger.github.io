@@ -609,4 +609,14 @@ main {
 
 }
 
+.cta-audio{
+  margin-top: .8rem;
+  min-width: 11.625rem;
+  height: 2.625rem;
+  padding: 0 2rem;
+  border-radius: .25rem;
+  text-align: center;
+  line-height: 2.625rem;
+}
+
 
